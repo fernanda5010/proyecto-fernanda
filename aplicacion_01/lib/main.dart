@@ -1,4 +1,5 @@
-import 'package:aplicacion_01/src/page/home_page.dart';
+import 'dart:html';
+import 'package:aplicacion_01/src/page/iniciopage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Materia App',
-        home: Scaffold(
-            appBar: AppBar(
-              title: const Text("Material App Bar"),
-            ),
-            body: HomePage()));
+      debugShowCheckedModeBanner: false,
+      title: 'Material App',
+      home: Scaffold(
+          appBar: AppBar(
+            title: const Text("Material App Bar"),
+          ),
+          body: iniciopage()),
+    );
   }
 }
